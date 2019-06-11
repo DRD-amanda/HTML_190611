@@ -22,12 +22,36 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title> HTML - Form </title>
 </head>
 
 <body>
-   
-    
+    <form>
+        <div>
+            <!-- input id 貼標籤 就是滑鼠點到label 他就會幫忙把滑鼠移到 輸入的地方 -->
+            <label for="input_name">姓名:</label>
+            <input type="text" id="input_name">
+        </div>
+        <div>
+            <label for="input_phone">電話:</label>
+            <input type="text" id="input_phone">
+        </div>
+        <div>
+            <label for="">性別:</label>
+            <!--input radio要單選的話 要分類的話 要用name 所以同一個類 只能有一個  -->
+            <input type="radio" id="male" name="gemder">
+            <label for="male">男生</label> 
+
+            <input type="radio" id="female" name="gemder">
+            <label for="female">女生</label> 
+
+        </div>
+
+
+
+    </form>
+
 </body>
 
 </html>
@@ -42,5 +66,3 @@
 <!--1.9. 試試看，加入送出按鈕 (submit) -->
 <!--1.10. 試試看，加入居住地 <select> <option> -->
 <!--1.11. 試試看，按下按鈕網址列會有什麼改變? -->
-
-
