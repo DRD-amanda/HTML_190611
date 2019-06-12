@@ -45,12 +45,55 @@
 
             <input type="radio" id="female" name="gemder">
             <label for="female">女生</label> 
-
+        </div>
+        <div>
+            <label for="">出生日期</label>
+        </div>
+        <div>
+            <label for="">出生時間</label>
+        </div>
+        <div>
+            <label>使用過那些軟體(多選)</label>
+            <input type="checkbox" id="word" name="software" value="word">
+            <label for="word">Word</label>
+            <input type="checkbox" id="excel" name="software" value="excel">
+            <label for="excel">Excel</label>
+        </div>
+        <div>
+            <label for="input_mail">E-mail:</label>
+            <input type="text" id="input_mail">
+        </div>
+        <div>
+            <label for="input_color">最喜歡的顏色:</label>
+            <input type="text" id="input_color">
+        </div>
+        <div>
+            <label for="city">居住地</label>
+            <select name="citylist" id="city">
+             <optgroup label="Taipei">Taipei</optgroup> 
+             <option value="Zhengshen">中山</option>
+             <option value="Tamsul">淡水</option> 
+             <option value="Nangang">南港</option>
+             <optgroup label="Taichung">Taichung</optgroup> 
+             <option value="Central">中區</option>
+             <option value="Nantun">南屯區</option>     
+            </select>
+        </div>
+        
+        <div>
+            <label for="height">身高tag:</label>
+            <input type="range" id="height" min="140" max="200" step="1" value="170" oninput="outputupdate(value)">
+            <output id="result">170</output>
         </div>
 
 
 
     </form>
+    <script>
+        function outputupdate(val){
+            document.getElementById("result").value = val;
+        }
+    </script>
 
 </body>
 
